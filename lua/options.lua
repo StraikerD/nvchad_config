@@ -13,14 +13,14 @@ o.relativenumber = true
 
 o.list = true
 vim.opt.listchars = {
-  tab = '󰌒 ',
-  space = '‧',
-  trail = '•',
-  extends = '󰜴',
-  precedes = '󰜱',
-  eol = '󰌑'
-  -- multispace = '',
-  -- leadmultispace = '',
+  tab            = '│󰜴', -- ➡ 󰜴 ➜ ⏵ ⇥ ⭾ ↹ ⍆
+  space          =  '⎵', -- '⎯',
+  trail          =  '⬥', -- · ⚬ ◦ • ⍛
+  extends        =  '󰜴', -- ⏵
+  precedes       =  '󰜱', -- ⏴
+  eol            =  '⮠', -- ⏎ ⮠ ⮐ ⤶ ↩ ↲ ↵ ⇣ ⇓ ↴ ↓
+  leadmultispace = '│ ',
+  multispace     =  '⎼', -- · ⍽ ⎯ ⎵
 }
 
 vim.opt.fillchars = {
@@ -31,3 +31,4 @@ vim.opt.fillchars = {
   foldsep = "^",
   foldclose = ">",
 }
+

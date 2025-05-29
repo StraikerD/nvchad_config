@@ -17,24 +17,27 @@ M.base46 = {
 
   hl_override = {
     ["@comment"] = { fg = "#999999" },
-    Comment = { fg = "#999999" },
-    LineNr = { fg = "#AAAAAA" },
-    NonText = { fg = "#777777" },
-    Folded = { fg = "#999999" },
+    Comment      = { fg = "#999999" },
+    LineNr       = { fg = "#AAAAAA" },
+    NonText      = { fg = "#4F4F4F" },
+    Folded       = { fg = "#999999" },
     WinSeparator = { fg = "#777777" },
-    CursorLine = { bg = "#282828", },
     CursorLineNr = { fg = "#FFFFFF", bg = "#282828" },
-    -- SignColumn = { bg = "#282828" },
-    Visual = { bg = "#1D426D" },
-    IndentBlanklineContextStart = { bg = "#282828"},
-    IndentBlanklineContextChar = { bg = "#282828", fg = "#BBBBBB"},
-    IndentBlanklineChar = { fg = "#555555"},
-    IndentBlanklineSpaceChar = { fg = "#555555"},
-    TbLineBufOff = { fg = "#999999" },
-    TbLineBufOffClose = { fg = "#999999" },
+    CursorLine   = { bg = "#282828" },
+    Visual       = { bg = "#1D426D" },
 
-    DevIconGDScript = { fg = "#1DA2E0" },
-    DevIconGodotTextScene = { fg = "#1DA2E0" }
+    IndentBlanklineContextStart = { bg = "#282828" },
+    IndentBlanklineContextChar  = { fg = "#BBBBBB", bg = "#282828" },
+    IndentBlanklineChar         = { fg = "#606060" },
+    IndentBlanklineSpaceChar    = { fg = "#606060" },
+    IblScopeChar                = { fg = "#606060" },
+    IblChar                     = { fg = "#0982b0" },
+
+    TbLineBufOff                = { fg = "#999999" },
+    TbLineBufOffClose           = { fg = "#999999" },
+
+    DevIconGDScript             = { fg = "#1DA2E0" },
+    DevIconGodotTextScene       = { fg = "#1DA2E0" }
   },
 }
 
