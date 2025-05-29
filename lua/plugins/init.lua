@@ -128,4 +128,13 @@ return {
     end,
   },
 
+-- ScrollOff -------------------------------------------------------------------
+  {
+    lazy = false,
+    "plax-00/endscroll.nvim",
+    opts = {
+      scroll_at_end = false,
+    },
+  },
+
 }
