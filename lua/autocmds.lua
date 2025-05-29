@@ -1,7 +1,7 @@
 require "nvchad.autocmds"
 
 local autocmd = vim.api.nvim_create_autocmd
-local augroup = vim.api.nvim_create_augroup("identation", { clear = true })
+local augroup = vim.api.nvim_create_augroup
 
 local function contains (val, tab)
   for index, value in ipairs(tab) do
@@ -13,10 +13,9 @@ local function contains (val, tab)
   return false
 end
 
-
 autocmd({"BufWinEnter"}, {
   desc = "Identation settings",
-  group = augroup,
+  group = augroup("Identation", { clear = true }),
 
   callback = function(event_opts)
     local ftypes = { "c", "h", "cpp", "cxx", "hpp", "hxx" }
@@ -29,3 +28,14 @@ autocmd({"BufWinEnter"}, {
     end
   end
 })
+
+autocmd({"VimEnter"}, {
+  group = augroup("WorkingDirectory", { clear = true }),
+  pattern = {"*.*"},
+  callback = function()
+    local path = vim.fn.expand('%:h')..'/'
+    path = "cd "..path
+    vim.api.nvim_command(path)
+  end,
+})
+

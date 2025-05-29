@@ -106,6 +106,19 @@ return {
     "windwp/nvim-ts-autotag",
   },
 
+-- Nvim-Tree -------------------------------------------------------------------
+  {
+    "nvim-tree/nvim-tree.lua",
+    opts = {
+      view = {
+        width = 35,
+      },
+      filters = {
+        dotfiles = false,
+      },
+    },
+  },
+
 -- Themes ----------------------------------------------------------------------
   {
     "nvchad/base46",
