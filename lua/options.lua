@@ -1,23 +1,30 @@
 require "nvchad.options"
 
--- add yours here!
+local set = vim.o
+local opt = vim.opt
 
-local o = vim.o
-o.cursorlineopt ='both' -- to enable cursorline!
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
 
-o.tabstop = 2
-o.shiftwidth = 2
-vim.opt.colorcolumn = "100"
-vim.opt.formatoptions:remove("r")
-vim.opt.formatoptions:remove("o")
+set.cursorlineopt ='both' -- to enable cursorline!
 
-o.scrolloff = 7
+set.tabstop = 2
+set.shiftwidth = 2
+opt.colorcolumn = "100"
+opt.formatoptions:remove("r")
+opt.formatoptions:remove("o")
 
-o.relativenumber = true
+set.scrolloff = 7
 
-o.list = true
-vim.opt.listchars = {
-  tab            = '│󰜴', -- ➡ 󰜴 ➜ ⏵ ⇥ ⭾ ↹ ⍆
+set.relativenumber = true
+opt.foldmethod = "expr"
+opt.foldexpr = "nvim_treesitter#foldexpr()"
+opt.foldtext = require("configs.foldtext")
+opt.foldenable = false
+
+set.list = true
+opt.listchars = {
+  tab            = '│━►',-- ➡ 󰜴 ➜ ⏵ ⇥ ⭾ ↹ ⍆
   space          =  '⎵', -- '⎯',
   trail          =  '⬥', -- · ⚬ ◦ • ⍛
   extends        =  '󰜴', -- ⏵
@@ -27,7 +34,7 @@ vim.opt.listchars = {
   multispace     =  '⎼', -- · ⍽ ⎯ ⎵
 }
 
-vim.opt.fillchars = {
+opt.fillchars = {
   eob = "~",
   lastline = "@",
   fold = " ",

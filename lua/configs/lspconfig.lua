@@ -3,6 +3,19 @@ require("nvchad.configs.lspconfig").defaults()
 local servers = {
   html = {},
 
+  pylsp = {
+    settings = {
+      pylsp = {
+        plugins = {
+          pycodestyle = {
+            ignore = {'W391'},
+            maxLineLength = 100
+          }
+        }
+      }
+    }
+  },
+
   bashls = {
     root_markers = { ".git" },
     filetypes = { "bash", "sh" },

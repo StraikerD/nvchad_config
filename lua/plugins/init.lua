@@ -109,13 +109,10 @@ return {
 -- Nvim-Tree -------------------------------------------------------------------
   {
     "nvim-tree/nvim-tree.lua",
+    lazy = false,
     opts = {
-      view = {
-        width = 35,
-      },
-      filters = {
-        dotfiles = false,
-      },
+      view = { width = 35, },
+      filters = { dotfiles = false, },
     },
   },
 
