@@ -3,6 +3,12 @@ require("nvchad.configs.lspconfig").defaults()
 local servers = {
   html = {},
 
+  dotls = {
+    cmd = { "dot-language-server" },
+    filetypes = { "dot" },
+    root_markers = { ".git" }
+  },
+
   pylsp = {
     settings = {
       pylsp = {
@@ -14,6 +20,12 @@ local servers = {
         }
       }
     }
+  },
+
+  qmlls = {
+    root_markers = { ".git" },
+    filetypes = { "qml", "qmljs" },
+    cmd = { "qmlls6" }
   },
 
   bashls = {
