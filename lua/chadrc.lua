@@ -26,6 +26,9 @@ M.base46 = {
     CursorLine   = { link = "ColorColumn" },
     Visual       = { bg = "#1D426D" },
 
+    DiffChange   = { link = "Underlined" },
+    DiffText     = { fg = "#000000", bg = "#A9B233" },
+
     IndentBlanklineContextStart = { bg = "#282828" },
     IndentBlanklineContextChar  = { fg = "#0982b0" , bg = "#282828" },
     IndentBlanklineChar         = { fg = "#606060" },
