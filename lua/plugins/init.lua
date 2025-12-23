@@ -5,6 +5,20 @@ return {
   --   event = 'VimEnter',
   -- },
 
+-- Ollama -----------------------------------------------------------------------
+  {
+    "David-Kunz/gen.nvim",
+    lazy=false,
+    opts = {
+      model = "llama3.2",
+      quit_map = "q",
+      accept_map = "<c-cr>",
+      host = "localhost",
+      port = "11434",
+      result_filetype = "markdown",
+    },
+  },
+
 -- Cmake Tools ------------------------------------------------------------------
   {
     "Civitasv/cmake-tools.nvim",
