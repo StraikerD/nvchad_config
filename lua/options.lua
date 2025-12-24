@@ -24,7 +24,7 @@ opt.foldenable = false
 
 set.list = true
 opt.listchars = {
-  tab            = '│━►',-- ➡ 󰜴 ➜ ⏵ ⇥ ⭾ ↹ ⍆
+  tab            = '⍆ ',-- ► ➡ 󰜴 ➜ ⏵ ⇥ ⭾ ↹ ⍆
   space          =  '⎵', -- '⎯',
   trail          =  '⬥', -- · ⚬ ◦ • ⍛
   extends        =  '󰜴', -- ⏵

@@ -1,10 +1,8 @@
-vim.bo.expandtab = true
 vim.bo.tabstop = 4
 vim.bo.shiftwidth = 4
 vim.bo.textwidth = 101
 vim.wo.colorcolumn = '+0'
 
-vim.opt_local.listchars = { leadmultispace = '│   ' }
 
 local function files_exist(names)
   local filename = ""
