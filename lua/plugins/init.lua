@@ -5,6 +5,20 @@ return {
   --   event = 'VimEnter',
   -- },
 
+-- Org-mode ---------------------------------------------------------------------
+  {
+    "nvim-orgmode/orgmode",
+    event = 'VeryLazy',
+    config = function ()
+      require('orgmode').setup({
+        org_agenda_files = '~/phone/notes/**/*',
+        org_default_notes_file = '~/phone/notes/refile.org',
+      })
+      -- LSP
+      vim.lsp.enable('org')
+    end,
+  },
+
 -- Ollama -----------------------------------------------------------------------
   {
     "David-Kunz/gen.nvim",
