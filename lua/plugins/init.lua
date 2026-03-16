@@ -5,6 +5,20 @@ return {
   --   event = 'VimEnter',
   -- },
 
+-- Ansi-colors ------------------------------------------------------------------
+  {
+    "0xferrous/ansi.nvim",
+    event = 'VeryLazy',
+    config = function()
+      require('ansi').setup({
+        auto_enable = false,
+        filetypes = { 'log', 'ansi' },
+        -- Color theme: classic, modern, catppuccin, dracula, onedark, gruvbox, terminal
+        theme = 'modern'
+      })
+    end
+  },
+
 -- Org-mode ---------------------------------------------------------------------
   {
     "nvim-orgmode/orgmode",
