@@ -2,6 +2,7 @@ vim.bo.tabstop = 4
 vim.bo.shiftwidth = 4
 vim.bo.textwidth = 101
 vim.wo.colorcolumn = '+0'
+vim.opt_local.listchars:append({leadmultispace = "|   " })
 
 
 local function files_exist(names)

@@ -8,8 +8,8 @@ vim.g.loaded_netrwPlugin = 1
 
 set.cursorlineopt ='both' -- to enable cursorline!
 
-set.tabstop = 2
-set.shiftwidth = 2
+set.tabstop = 4
+set.shiftwidth = 4
 opt.colorcolumn = "100"
 opt.formatoptions:remove("r")
 opt.formatoptions:remove("o")
@@ -30,7 +30,7 @@ opt.listchars = {
   extends        =  '󰜴', -- ⏵
   precedes       =  '󰜱', -- ⏴
   eol            =  '⮠', -- ⏎ ⮠ ⮐ ⤶ ↩ ↲ ↵ ⇣ ⇓ ↴ ↓
-  leadmultispace = '│ ',
+  leadmultispace = '│   ',
   multispace     =  '⎼', -- · ⍽ ⎯ ⎵
 }
 
