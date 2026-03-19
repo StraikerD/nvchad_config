@@ -54,18 +54,6 @@ return {
     opts = {},
   },
 
--- Harpoon ---------------------------------------------------------------------
-  {
-    lazy=false,
-    "ThePrimeagen/harpoon",
-    branch = "harpoon2",
-    -- "nvim-telescope/telescope.nvim"
-    dependencies = { {"nvim-lua/plenary.nvim"} },
-    opts = function ()
-      require "configs.harpoon"
-    end,
-  },
-
 -- Glyphs ----------------------------------------------------------------------
   {
     "jonathanforhan/nvim-glyph",
